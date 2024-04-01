@@ -5,7 +5,7 @@ import path from "@/path";
 
 const TopicLists = async () => {
   const topics = await db.topic.findMany();
-  console.log(topics);
+  // console.log(topics);
 
   const renderedTopics = topics.map((topic) => {
     return (
